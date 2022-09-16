@@ -26,10 +26,10 @@ jobs:
         with:
           node-version: 14.17
         
-      - bane: Install Dependencies
+      - name: Install Dependencies
         run: yarn install
 
-      - bane: Build App
+      - name: Build App
         run: yarn build
       
       - name: Semantic Release
